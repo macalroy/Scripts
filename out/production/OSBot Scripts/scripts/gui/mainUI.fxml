@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView fx:id="skillTable" editable="false" layoutY="246.0" prefHeight="256.0" prefWidth="325.0" style="-fx-background-color: white;">
+            <columns>
+                <TableColumn fx:id="skillName" editable="false" prefWidth="81.25" sortable="false" text="Skill">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="skillName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="skillExperience" editable="false" prefWidth="81.25" sortable="false" text="Exp Gained">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="skillExperience" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="skillExpHr" editable="false" prefWidth="81.25" sortable="false" text="Exp/Hour">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="skillExperiencePerHour" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="skillLevel" editable="false" prefWidth="81.25" sortable="false" text="Lvl Gained">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="skillLevel" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+      <TableView fx:id="lootTable" editable="false" layoutX="325.0" layoutY="246.0" prefHeight="256.0" prefWidth="325.0" style="-fx-background-color: white;">
+         <columns>
+            <TableColumn fx:id="itemName" editable="false" prefWidth="165.5" sortable="false" text="Looted Item">
+               <cellValueFactory>
+                  <PropertyValueFactory property="itemName" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="itemAmount" editable="false" prefWidth="162.5" sortable="false" text="Amount Looted">
+               <cellValueFactory>
+                  <PropertyValueFactory property="itemAmount" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <TextFlow layoutX="50.0" layoutY="38.0" prefHeight="175.0" prefWidth="550.0" textAlignment="CENTER">
+         <children>
+            <Text fx:id="timerText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" textAlignment="CENTER" wrappingWidth="308.13671875">
+               <font>
+                  <Font size="145.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <MenuBar prefHeight="25.0" prefWidth="650.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Attack Monster">
+              <items>
+                <MenuItem fx:id="chickenItem" mnemonicParsing="false" text="Chickens" />
+                  <MenuItem fx:id="cowItem" mnemonicParsing="false" text="Cows" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Attack Type">
+              <items>
+                <MenuItem fx:id="attackItem" mnemonicParsing="false" text="Attack" />
+                  <MenuItem fx:id="strengthItem" mnemonicParsing="false" text="Strength" />
+                  <MenuItem fx:id="defenceItem" mnemonicParsing="false" text="Defence" />
+                  <MenuItem fx:id="randomItem" mnemonicParsing="false" text="Random" />
+              </items>
+            </Menu>
+            <Menu fx:id="lootMenu" mnemonicParsing="false" />
+         </menus>
+      </MenuBar>
+    </children>
+</Pane>

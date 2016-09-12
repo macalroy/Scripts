@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="OSBotAIO">
+    <output-path>$USER_HOME$/OSBot/Scripts</output-path>
+    <root id="archive" name="OSBotAIO.jar">
+      <element id="module-output" name="OSBot Scripts" />
+      <element id="dir-copy" path="$PROJECT_DIR$/data" />
+    </root>
+  </artifact>
+</component>

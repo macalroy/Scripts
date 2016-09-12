@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="sceneTwoRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="550.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView fx:id="skillTable" editable="false" layoutY="175.0" prefHeight="200.0" prefWidth="550.0">
+            <columns>
+                <TableColumn fx:id="skillName" prefWidth="183.333" text="Skill Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="skillName" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="skillLevel" prefWidth="183.333" text="Skill Level">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="skillLevel" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="skillExperience" prefWidth="183.333" text="Skill Experience">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="skillExperience" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+      <Button fx:id="createSceneOne" layoutX="249.0" layoutY="69.0" mnemonicParsing="false" text="Button" />
+    </children>
+</Pane>

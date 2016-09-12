@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.75" prefHeight="400.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="408.0" prefWidth="550.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="RED" layoutX="346.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="asdfasdf">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</VBox>
